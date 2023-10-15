@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #060c21;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+section#container {
+    width: 700px;
+    height: 750px;
+    background-color: #27282c;
+    box-shadow: 0 0 25px #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Titulo: Tabela de IMC */
+
+section h1 {
+    margin: 50px 0;
+    margin-left: 2.3rem;
+    font-size: 30px;
+}
+
+
+/* Tabela IMC */
+
+section table {
+    position: relative;
+    width: 100%;
+}
+
+
+section table th {
+    font-size: 20px;
+}
+
+
+section table td {
+    position: relative;
+    padding: 10px 0 0 8.2rem;
+}
+
+
+section table td.resultados {
+    padding-left: 6.3rem;
+}
+
+
+/* h2 titulo Calcule seu IMC */
+
+h2 {
+    font-size: 30px;
+    padding: 40px;
+    padding-left: 5rem;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+
+form label {
+    padding-top: 15px;
+}
+
+
+form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: solid 1px #fff;
+    border-radius: 15px;
+    width: 15rem;
+    padding: 10px;
+    margin-top: 10px;
+    caret-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
