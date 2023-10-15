@@ -101,3 +101,16 @@ form input {
     color: #fff;
     cursor: pointer;
 }
+
+
+/* Resultado após a conta do JS */
+
+#resultado {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10rem 0 0 -28rem;
+}
