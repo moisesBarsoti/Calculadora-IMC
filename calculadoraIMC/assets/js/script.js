@@ -1,14 +1,21 @@
 function calcularIMC() {
     const botao = document.querySelector('#botao');
+    const botaoVoltar = document.querySelector('#botaoVoltar').style.display = 'none';
 
     botao.addEventListener('click', function(e) {
         e.preventDefault();
         let peso = document.querySelector('#peso');
         let altura = document.querySelector('#altura');
+        const table = document.querySelector('table').style.display = 'none';
+        const form = document.querySelector('form').style.display = 'none';
+        const h1 = document.querySelector('h1').style.display = 'none';
+        const h2 = document.querySelector('h2').style.display = 'none';
+        const botaoVoltar = document.querySelector('#botaoVoltar').style.display = 'block';
+       
         const resultadoNoNavegador = document.querySelector('#resultado');
         
         let contaIMC = peso.value / (altura.value * altura.value);
-        console.log(contaIMC)
+        console.log(contaIMC);
 
         if (contaIMC >= 40) {
             resultadoNoNavegador.innerHTML = `
@@ -36,7 +43,9 @@ function calcularIMC() {
             resultadoNoNavegador.innerHTML += `
             ${contaIMC.toFixed(1)} Abaixo do peso <br>
             `;
-        }    
+        }
+        
+        
 });
 };
 
