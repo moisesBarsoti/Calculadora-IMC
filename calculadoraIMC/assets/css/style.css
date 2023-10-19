@@ -29,6 +29,7 @@ section#container {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    margin-top: -33rem;
 }
 
 
@@ -99,6 +100,11 @@ form input {
     margin-top: 10px;
     caret-color: #fff;
     color: #fff;
+}
+
+
+input#botao:hover {
+    border: solid 1px #0eb;
     cursor: pointer;
 }
 
@@ -124,6 +130,11 @@ form input {
     align-items: center;
     margin: 5rem 0 0 0;
     
+}
+
+
+#botaoVoltar:hover {
+    border: solid 1px #0eb;
 }
 
 
