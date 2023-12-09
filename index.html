@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Venha ver o seu IMC, calcule aqui e agora"/>
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+  </head>
+  <body>
+    <main>
+      <section id="container">
+        <!-- Tabela do IMC -->
+        <h1>Tabela de IMC</h1>
+        <table>
+          <thead>
+            <th>IMC</th>
+            <th>Resultados</th>
+          </thead>
+          <tbody>
+            <!-- Menos que 18,5 -->
+            <tr>
+              <td>Menos que 18,5</td>
+              <td class="resultados">Abaixo do peso</td>
+            </tr>
+            <!-- Entre que 18,5 e 24,9  -->
+            <tr>
+              <td>Entre que 18,5 e 24,9</td>
+              <td class="resultados">Peso normal</td>
+            </tr>
+            <!-- Entre 25 e 29,9 -->
+            <tr>
+              <td>Entre 25 e 29,9</td>
+              <td class="resultados">Sobrepeso</td>
+            </tr>
+            <!-- Entre 30 e 34,9 -->
+            <tr>
+              <td>Entre 30 e 34,9</td>
+              <td class="resultados">Obesidade grau 1</td>
+            </tr>
+            <!-- Entre 35 e 39,9 -->
+            <tr>
+              <td>Entre 35 e 39,9</td>
+              <td class="resultados">Obesidade grau 2</td>
+            </tr>
+            <!-- Mais do que 40 -->
+            <tr>
+              <td>Mais do que 40</td>
+              <td class="resultados">Obesidade grau 3</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Calcule seu IMC</h2>
+        <form action="" method="GET">
+          <!-- Peso -->
+          <label for="peso">Peso:</label>
+          <input type="number" id="peso" autofocus placeholder="Coloque seu peso">
+          <!-- Altura -->
+          <label for="altura">Altura:</label>
+          <input type="number" id="altura" placeholder="Coloque sua altura. Ex: 1,60">
+          <!-- Botão -->
+          <input type="submit" id="botao" title="Clique aqui para calcular">
+        </form>
+      </section>
+    </main>
+
+    <div id="resultado">
+        <a href="tabelaIMC.html">
+        <button id="botaoVoltar">Voltar</button>
+    </a>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
